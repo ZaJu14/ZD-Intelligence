@@ -26,7 +26,7 @@ export function AboutStrip() {
           transition={{ duration: 0.7 }}
         >
           <p className="text-xs font-semibold uppercase tracking-widest text-gold mb-4">
-            About ZAI Intelligence
+            About ZD Intelligence
           </p>
           <h2 className="font-serif text-3xl md:text-5xl font-light leading-snug mb-6">
             We speak AI.{" "}
@@ -35,14 +35,16 @@ export function AboutStrip() {
             We speak business.
           </h2>
           <p className="text-white/70 leading-relaxed mb-4">
-            Founded in Dubai by practitioners who have led AI programmes across
-            government, finance, and retail in the GCC, ZAI Intelligence
-            combines technical depth with regional fluency.
+            ZD Intelligence was built by practitioners who have led AI
+            programmes across the GCC and with international organisations
+            worldwide. We combine deep technical execution with cultural
+            fluency — and a hard commitment to leaving capability inside
+            your organisation.
           </p>
           <p className="text-white/70 leading-relaxed mb-8">
-            We have no interest in selling you software licences. Our only
-            product is outcomes — measurable, documented, and owned by your
-            organisation.
+            We are remote-first by design. That means we work with the best
+            talent globally and serve clients wherever they are — no
+            boundaries, no dependency on geography.
           </p>
           <Link href="/about/" className="btn-primary">
             Our Story
@@ -56,7 +58,7 @@ export function AboutStrip() {
           className="grid grid-cols-2 gap-4"
         >
           {[
-            { icon: "🌍", label: "GCC-Native", desc: "UAE · KSA · Qatar" },
+            { icon: "🌐", label: "Global Reach", desc: "GCC & International" },
             { icon: "🗣️", label: "Bilingual", desc: "Arabic & English" },
             { icon: "📊", label: "Outcome-Led", desc: "ROI-first delivery" },
             { icon: "🔒", label: "Compliant", desc: "Built-in governance" },

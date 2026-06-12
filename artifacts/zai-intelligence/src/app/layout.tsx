@@ -23,11 +23,11 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "ZAI Intelligence — AI Consulting for GCC Businesses",
-    template: "%s | ZAI Intelligence",
+    default: "ZD Intelligence — AI Consulting for GCC & International Organisations",
+    template: "%s | ZD Intelligence",
   },
   description:
-    "ZAI Intelligence helps GCC organisations unlock the power of AI through productivity automation, workforce training, and robust governance frameworks.",
+    "ZD Intelligence helps organisations across the GCC and worldwide unlock the power of AI through productivity automation, workforce training, and robust governance frameworks.",
   keywords: [
     "AI consulting",
     "GCC",
@@ -36,21 +36,23 @@ export const metadata: Metadata = {
     "artificial intelligence",
     "digital transformation",
     "AI governance",
+    "remote AI consulting",
+    "international AI",
   ],
   openGraph: {
     type: "website",
     locale: "en_AE",
     url: SITE_URL,
-    siteName: "ZAI Intelligence",
-    title: "ZAI Intelligence — AI Consulting for GCC Businesses",
+    siteName: "ZD Intelligence",
+    title: "ZD Intelligence — AI Consulting for GCC & International Organisations",
     description:
-      "ZAI Intelligence helps GCC organisations unlock the power of AI through productivity automation, workforce training, and robust governance frameworks.",
+      "ZD Intelligence helps organisations across the GCC and worldwide unlock the power of AI through productivity automation, workforce training, and robust governance frameworks.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ZAI Intelligence — AI Consulting for GCC Businesses",
+    title: "ZD Intelligence — AI Consulting for GCC & International Organisations",
     description:
-      "ZAI Intelligence helps GCC organisations unlock the power of AI through productivity automation, workforce training, and robust governance frameworks.",
+      "ZD Intelligence helps organisations across the GCC and worldwide unlock the power of AI through productivity automation, workforce training, and robust governance frameworks.",
   },
   robots: {
     index: true,

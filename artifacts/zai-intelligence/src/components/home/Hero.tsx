@@ -30,7 +30,7 @@ export function Hero() {
           transition={{ duration: 0.5 }}
           className="text-xs font-semibold uppercase tracking-widest text-gold mb-6"
         >
-          AI Consulting for GCC Businesses
+          AI Consulting · GCC &amp; International
         </motion.p>
 
         <motion.h1
@@ -42,7 +42,7 @@ export function Hero() {
           Intelligent AI.{" "}
           <span className="gradient-text">Built for</span>
           <br />
-          <span className="italic">the Gulf.</span>
+          <span className="italic">your world.</span>
         </motion.h1>
 
         <motion.p
@@ -51,9 +51,9 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.25 }}
           className="mt-8 text-lg md:text-xl text-white/70 max-w-xl leading-relaxed"
         >
-          ZAI Intelligence helps GCC organisations unlock AI productivity,
-          build internal capability, and govern AI with confidence — in Arabic
-          and English.
+          ZD Intelligence helps organisations across the GCC and beyond unlock
+          AI productivity, build internal capability, and govern AI with
+          confidence — wherever you operate.
         </motion.p>
 
         <motion.div
@@ -78,9 +78,9 @@ export function Hero() {
           className="mt-20 grid grid-cols-3 gap-8 max-w-sm border-t border-white/10 pt-8"
         >
           {[
-            { num: "40+", label: "GCC Clients" },
+            { num: "40+", label: "Clients Served" },
             { num: "55%", label: "Avg. Time Saved" },
-            { num: "3", label: "Countries" },
+            { num: "100%", label: "Remote-Ready" },
           ].map((s) => (
             <div key={s.label}>
               <p className="font-serif text-3xl font-semibold gradient-text">

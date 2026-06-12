@@ -24,7 +24,7 @@ export const SERVICES = [
     summary:
       "Hands-on, Arabic & English sessions that take your teams from AI-curious to AI-confident in days.",
     description:
-      "Designed for GCC audiences, our workshops combine practical tooling sessions with strategic leadership briefings. Whether you are upskilling front-line staff or briefing the C-suite, every session is tailored to your industry context and delivered in the language your team thinks in.",
+      "Our workshops blend practical tooling sessions with strategic leadership briefings. Whether you are upskilling front-line staff or briefing the C-suite, every session is tailored to your industry context, delivered remotely or on-site, and available in the language your team thinks in.",
     outcomes: [
       "Executive AI strategy masterclasses",
       "Team-level prompt engineering & tool workshops",
@@ -41,9 +41,9 @@ export const SERVICES = [
     summary:
       "Protect your data, satisfy regulators, and earn stakeholder trust as you scale AI across the enterprise.",
     description:
-      "Operating under GCC data-residency requirements and sector-specific regulations demands a governance framework built for the region. We design AI risk policies, conduct model-risk assessments, and implement monitoring infrastructure so you can move fast without exposing the organisation to liability.",
+      "Operating across different regulatory environments — from GCC data-residency requirements to international sector standards — demands a governance framework built for your context. We design AI risk policies, conduct model-risk assessments, and implement monitoring infrastructure so you can move fast without exposing the organisation to liability.",
     outcomes: [
-      "AI risk & bias assessments aligned to UAE & KSA frameworks",
+      "AI risk & bias assessments aligned to UAE, KSA, and international frameworks",
       "Data-governance policy design and implementation",
       "Model monitoring dashboards & audit trails",
       "Vendor due-diligence for third-party AI procurement",
@@ -54,9 +54,9 @@ export const SERVICES = [
 
 export const PILLARS = [
   {
-    icon: "🌍",
-    title: "GCC-Native Expertise",
-    body: "Deep understanding of local regulation, culture, and business dynamics across the UAE, KSA, Qatar, and beyond.",
+    icon: "🌐",
+    title: "Regional & Global Expertise",
+    body: "Deep understanding of GCC regulation, culture, and business dynamics — combined with international best practice from engagements worldwide.",
   },
   {
     icon: "🤝",
@@ -71,7 +71,7 @@ export const PILLARS = [
   {
     icon: "🗣️",
     title: "Bilingual Delivery",
-    body: "All engagements available in Arabic and English, ensuring nuance is never lost in translation.",
+    body: "All engagements available in Arabic and English, remotely or on-site — nuance is never lost in translation.",
   },
 ];
 

@@ -32,7 +32,7 @@ export function Navbar() {
           className="font-serif text-xl font-semibold tracking-wide"
           onClick={() => setOpen(false)}
         >
-          <span className="gradient-text">ZAI</span>
+          <span className="gradient-text">ZD</span>
           <span className="text-[var(--fg)] ml-1.5">Intelligence</span>
         </Link>
 

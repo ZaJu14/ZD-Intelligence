@@ -35,7 +35,7 @@ export default function ContactPage() {
       <PageHero
         label="Get in Touch"
         title="Let's talk about your AI ambitions"
-        subtitle="Whether you have a specific project in mind or just want to explore what's possible, we would love to hear from you."
+        subtitle="Whether you have a specific project in mind or just want to explore what's possible, we would love to hear from you — wherever you are in the world."
       />
 
       <section className="section-pad bg-[var(--bg)]">
@@ -60,12 +60,14 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <span className="text-2xl">📍</span>
+                <span className="text-2xl">🌐</span>
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-widest text-[var(--muted)] mb-1">
-                    Location
+                    How We Work
                   </p>
-                  <p>Dubai, United Arab Emirates</p>
+                  <p className="text-sm text-[var(--fg)]">
+                    Remote-first · Available globally · GCC &amp; International
+                  </p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -80,7 +82,7 @@ export default function ContactPage() {
                     rel="noopener noreferrer"
                     className="text-gold hover:text-gold-light transition-colors"
                   >
-                    ZAI Intelligence
+                    ZD Intelligence
                   </a>
                 </div>
               </div>
