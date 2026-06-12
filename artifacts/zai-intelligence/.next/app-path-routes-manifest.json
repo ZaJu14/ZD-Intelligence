@@ -1,0 +1,14 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/contact/page": "/contact",
+  "/resources/page": "/resources",
+  "/about/page": "/about",
+  "/book/page": "/book",
+  "/page": "/",
+  "/services/page": "/services",
+  "/services/ai-productivity/page": "/services/ai-productivity",
+  "/services/security/page": "/services/security",
+  "/services/workshops/page": "/services/workshops"
+}
