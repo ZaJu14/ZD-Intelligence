@@ -1491,6 +1491,9 @@
   .whitespace-nowrap {
     white-space: nowrap;
   }
+  .text-\[\#b8933f\] {
+    color: #b8933f;
+  }
   .text-\[var\(--fg\)\] {
     color: var(--fg);
   }
@@ -2639,11 +2642,6 @@
   .sm\:grid-cols-3 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-  .sm\:grid-cols-4 {
-    @media (width >= 40rem) {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
   .sm\:flex-col {

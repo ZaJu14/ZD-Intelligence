@@ -32,8 +32,8 @@ export function Navbar() {
           className="font-serif text-xl font-semibold tracking-wide"
           onClick={() => setOpen(false)}
         >
-          <span className="gradient-text">ZD</span>
-          <span className="text-[var(--fg)] ml-1.5">Intelligence</span>
+          <span className="gradient-text text-[#b8933f]">ZD</span>
+          <span className="ml-1.5 text-[#b8933f]">Intelligence</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">
