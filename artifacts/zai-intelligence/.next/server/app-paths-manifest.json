@@ -1,14 +1,14 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/sitemap.xml/route": "app/sitemap.xml/route.js",
   "/robots.txt/route": "app/robots.txt/route.js",
-  "/contact/page": "app/contact/page.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
   "/resources/page": "app/resources/page.js",
-  "/page": "app/page.js",
-  "/book/page": "app/book/page.js",
+  "/contact/page": "app/contact/page.js",
   "/about/page": "app/about/page.js",
-  "/services/page": "app/services/page.js",
+  "/book/page": "app/book/page.js",
   "/services/ai-productivity/page": "app/services/ai-productivity/page.js",
+  "/page": "app/page.js",
   "/services/workshops/page": "app/services/workshops/page.js",
-  "/services/security/page": "app/services/security/page.js"
+  "/services/security/page": "app/services/security/page.js",
+  "/services/page": "app/services/page.js"
 }
