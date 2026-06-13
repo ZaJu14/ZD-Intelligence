@@ -1,0 +1,5 @@
+name = "zd-intelligence"
+compatibility_date = "2025-01-01"
+
+[assets]
+directory = "./artifacts/zai-intelligence/out"
