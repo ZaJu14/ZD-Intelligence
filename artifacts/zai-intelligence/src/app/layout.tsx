@@ -70,7 +70,7 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning
       className={`${cormorant.variable} ${dmSans.variable}`}
-    >
+    ><link rel="icon" href="/favicon.ico" />
       <body>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <Navbar />

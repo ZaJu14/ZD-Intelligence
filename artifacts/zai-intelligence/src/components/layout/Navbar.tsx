@@ -29,11 +29,14 @@ export function Navbar() {
       <div className="container-wide flex h-16 items-center justify-between">
         <Link
           href="/"
-          className="font-serif text-xl font-semibold tracking-wide"
+          className="font-serif text-xl font-semibold tracking-wide flex items-center gap-2"
           onClick={() => setOpen(false)}
         >
-          <span className="gradient-text text-[#b8933f]">ZD</span>
-          <span className="ml-1.5 text-[#b8933f]">Intelligence</span>
+          <BrandIcon />
+          <span>
+            <span className="gradient-text text-[#b8933f]">ZD</span>
+            <span className="ml-1.5 text-[#b8933f]">Intelligence</span>
+          </span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">
@@ -132,6 +135,16 @@ function MenuIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="18" x2="21" y2="18" />
+    </svg>
+  );
+}
+
+function BrandIcon() {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#b8933f]">
+      <path d="M4 12l4 4 8-8" />
+      <circle cx="16" cy="16" r="3" />
+      <circle cx="8" cy="8" r="3" />
     </svg>
   );
 }
