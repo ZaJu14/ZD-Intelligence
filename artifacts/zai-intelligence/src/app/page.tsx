@@ -9,9 +9,9 @@ import { FAQ } from "@/components/home/FAQ";
 import { CtaBand } from "@/components/home/CtaBand";
 
 export const metadata: Metadata = {
-  title: "ZAI Intelligence — AI Consulting for GCC Businesses",
+  title: "ZD Intelligence — AI Consulting for GCC & International Organisations",
   description:
-    "ZAI Intelligence helps GCC organisations unlock the power of AI through productivity automation, workforce training, and robust governance frameworks.",
+    "ZD Intelligence helps organisations across the GCC and worldwide unlock the power of AI through productivity automation, workforce training, and robust governance frameworks.",
 };
 
 export default function HomePage() {

@@ -101,7 +101,7 @@ export const PROCESS_STEPS = [
 export const TESTIMONIALS = [
   {
     quote:
-      "ZAI helped us cut invoice-processing time by 55 % within six weeks. The ROI was immediate and the team made it feel effortless.",
+      "ZD Intelligence helped us cut invoice-processing time by 55 % within six weeks. The ROI was immediate and the team made it feel effortless.",
     author: "CFO",
     company: "Regional Logistics Group, Dubai",
   },
