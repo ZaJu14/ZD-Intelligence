@@ -1,0 +1,224 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0b1628;
+  --color-navy-mid: #122040;
+  --color-navy-light: #1a2d55;
+  --color-gold: #b8933f;
+  --color-gold-light: #d4ab5c;
+  --color-gold-pale: #f0e2c0;
+  --color-cream: #faf8f4;
+  --color-surface: #ffffff;
+
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-dm-sans), system-ui, sans-serif;
+}
+
+:root {
+  --bg: var(--color-cream);
+  --fg: var(--color-navy);
+  --bg-card: #ffffff;
+  --border: rgba(11, 22, 40, 0.1);
+  --muted: #6b7280;
+}
+
+.dark {
+  --bg: var(--color-navy);
+  --fg: #f0e9db;
+  --bg-card: var(--color-navy-mid);
+  --border: rgba(184, 147, 63, 0.15);
+  --muted: #9ca3af;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* RTL support */
+[dir="rtl"] body {
+  font-family: var(--font-sans);
+}
+
+[dir="rtl"] .font-serif {
+  font-family: Georgia, serif;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.text-gold {
+  color: var(--color-gold);
+}
+
+.text-gold-light {
+  color: var(--color-gold-light);
+}
+
+.bg-navy {
+  background-color: var(--color-navy);
+}
+
+.bg-navy-mid {
+  background-color: var(--color-navy-mid);
+}
+
+.bg-gold {
+  background-color: var(--color-gold);
+}
+
+.bg-gold-light {
+  background-color: var(--color-gold-light);
+}
+
+.bg-cream {
+  background-color: var(--color-cream);
+}
+
+.border-gold {
+  border-color: var(--color-gold);
+}
+
+.section-pad {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 1024px) {
+  .section-pad {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+.container-wide {
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container-wide {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-underline {
+  position: relative;
+}
+
+.gold-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 3rem;
+  height: 2px;
+  background: var(--color-gold);
+}
+
+[dir="rtl"] .gold-underline::after {
+  left: auto;
+  right: 0;
+}
+
+.card-base {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card-base:hover {
+  box-shadow: 0 8px 32px rgba(184, 147, 63, 0.12);
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-gold);
+  color: var(--color-navy);
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  letter-spacing: 0.01em;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: var(--color-gold-light);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--color-gold);
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  letter-spacing: 0.01em;
+  border: 2px solid var(--color-gold);
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: var(--color-gold);
+  color: var(--color-navy);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: inherit;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-ghost:hover {
+  background: rgba(184, 147, 63, 0.08);
+}
