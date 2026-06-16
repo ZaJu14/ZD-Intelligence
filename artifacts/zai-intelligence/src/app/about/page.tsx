@@ -8,7 +8,7 @@ import { LINKEDIN_URL } from "@/lib/config";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "ZAI Intelligence — a focused AI practice that designs and builds automation systems, intelligence pipelines, and governance frameworks for modern businesses.",
+    "ZD Intelligence — a focused AI practice that designs and builds automation systems, intelligence pipelines, and governance frameworks for modern businesses.",
 };
 
 export default function AboutPage() {
@@ -34,7 +34,7 @@ export default function AboutPage() {
                 working six months after launch.
               </p>
               <p>
-                ZAI Intelligence was built to close that gap. We focus on the
+                ZD Intelligence was built to close that gap. We focus on the
                 execution layer: designing systems that fit your operations,
                 building them with production-grade rigour, and supporting
                 them long enough to matter.

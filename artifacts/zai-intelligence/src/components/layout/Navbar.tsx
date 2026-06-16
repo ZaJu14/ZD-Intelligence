@@ -36,7 +36,7 @@ export function Navbar() {
         >
           <BrandIcon />
           <span>
-            <span className="gradient-text text-[#b8933f]">ZAI</span>
+            <span className="gradient-text text-[#b8933f]">ZD</span>
             <span className="ml-1.5 text-[#b8933f]">Intelligence</span>
           </span>
         </Link>

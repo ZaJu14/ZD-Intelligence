@@ -120,7 +120,7 @@ export default function ContactPage() {
                     rel="noopener noreferrer"
                     className="text-gold hover:text-gold-light transition-colors"
                   >
-                    ZAI Intelligence
+                    ZD Intelligence
                   </a>
                 </div>
               </div>

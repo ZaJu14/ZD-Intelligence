@@ -9,9 +9,9 @@ import { FAQ } from "@/components/home/FAQ";
 import { CtaBand } from "@/components/home/CtaBand";
 
 export const metadata: Metadata = {
-  title: "ZAI Intelligence — AI Automation & Intelligence Systems",
+  title: "ZD Intelligence — AI Automation & Intelligence Systems",
   description:
-    "ZAI Intelligence designs and builds AI automation workflows, intelligence systems, and data pipelines for modern businesses. Production-ready. Bilingual. Outcome-focused.",
+    "ZD Intelligence designs and builds AI automation workflows, intelligence systems, and data pipelines for modern businesses. Production-ready. Bilingual. Outcome-focused.",
 };
 
 export default function HomePage() {

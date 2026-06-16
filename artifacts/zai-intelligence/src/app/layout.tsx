@@ -25,11 +25,11 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "ZAI Intelligence — AI Automation & Intelligence Systems",
-    template: "%s | ZAI Intelligence",
+    default: "ZD Intelligence — AI Automation & Intelligence Systems",
+    template: "%s | ZD Intelligence",
   },
   description:
-    "ZAI Intelligence designs and builds AI automation workflows, intelligence systems, and data pipelines that help modern businesses work faster, make better decisions, and scale without adding overhead.",
+    "ZD Intelligence designs and builds AI automation workflows, intelligence systems, and data pipelines that help modern businesses work faster, make better decisions, and scale without adding overhead.",
   keywords: [
     "AI automation",
     "AI workflows",
@@ -45,14 +45,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: SITE_URL,
-    siteName: "ZAI Intelligence",
-    title: "ZAI Intelligence — AI Automation & Intelligence Systems",
+    siteName: "ZD Intelligence",
+    title: "ZD Intelligence — AI Automation & Intelligence Systems",
     description:
       "We design and build AI automation workflows and intelligence systems for modern businesses.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ZAI Intelligence — AI Automation & Intelligence Systems",
+    title: "ZD Intelligence — AI Automation & Intelligence Systems",
     description:
       "We design and build AI automation workflows and intelligence systems for modern businesses.",
   },

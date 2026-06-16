@@ -26,14 +26,14 @@ export function AboutStrip() {
           transition={{ duration: 0.7 }}
         >
           <p className="text-xs font-semibold uppercase tracking-widest text-gold mb-4">
-            About ZAI Intelligence
+            About ZD Intelligence
           </p>
           <h2 className="font-serif text-3xl md:text-5xl font-light leading-snug mb-6">
             We build AI systems.{" "}
             <span className="italic gradient-text">That actually work.</span>
           </h2>
           <p className="text-white/70 leading-relaxed mb-4">
-            ZAI Intelligence is a focused AI practice that designs and delivers
+            ZD Intelligence is a focused AI practice that designs and delivers
             automation workflows, intelligence systems, and data pipelines for
             organisations that need real results — not slide decks.
           </p>

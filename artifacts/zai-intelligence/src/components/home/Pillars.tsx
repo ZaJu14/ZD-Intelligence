@@ -7,7 +7,7 @@ export function Pillars() {
       <div className="container-wide">
         <AnimatedSection>
           <p className="text-xs font-semibold uppercase tracking-widest text-gold mb-3">
-            Why ZAI Intelligence
+            Why ZD Intelligence
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-light max-w-xl">
             How we work differently

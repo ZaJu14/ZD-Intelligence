@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container-wide py-14 grid grid-cols-1 md:grid-cols-3 gap-10">
         <div>
           <p className="font-serif text-2xl font-semibold mb-3">
-            <span className="gradient-text">ZAI</span>{" "}
+            <span className="gradient-text">ZD</span>{" "}
             <span className="text-white">Intelligence</span>
           </p>
           <p className="text-sm leading-relaxed text-white/60 max-w-xs">
@@ -77,7 +77,7 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <div className="container-wide py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/40">
-          <p>© {new Date().getFullYear()} ZAI Intelligence. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} ZD Intelligence. All rights reserved.</p>
           <p>AI Automation · Intelligence Systems · Global</p>
         </div>
       </div>

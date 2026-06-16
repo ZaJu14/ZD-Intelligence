@@ -6,7 +6,7 @@ import { CalendlyEmbed } from "@/components/shared/CalendlyEmbed";
 export const metadata: Metadata = {
   title: "Book a Free Call",
   description:
-    "Schedule your free 30-minute AI discovery call with ZAI Intelligence. No jargon, no commitment — just clear next steps.",
+    "Schedule your free 30-minute AI discovery call with ZD Intelligence. No jargon, no commitment — just clear next steps.",
 };
 
 export default function BookPage() {
