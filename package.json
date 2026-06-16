@@ -1,0 +1,12 @@
+{
+  "name": "zd-intelligence-root",
+  "private": true,
+  "scripts": {
+    "build": "pnpm --filter @workspace/zai-intelligence run build",
+    "dev": "pnpm --filter @workspace/zai-intelligence run dev"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  }
+}
