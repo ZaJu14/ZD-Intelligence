@@ -5,14 +5,14 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { CtaBand } from "@/components/home/CtaBand";
 import { SERVICES } from "@/lib/content";
 
-const service = SERVICES[0]!;
+const service = SERVICES[1]!;
 
 export const metadata: Metadata = {
   title: service.title,
   description: service.summary,
 };
 
-export default function AIStrategyPage() {
+export default function AIWorkshopsPage() {
   return (
     <>
       <PageHero
@@ -37,7 +37,7 @@ export default function AIStrategyPage() {
 
           <AnimatedSection delay={0.15}>
             <h3 className="font-serif text-xl font-light mb-6 text-[var(--muted)]">
-              What you get
+              Service includes
             </h3>
             <ul className="space-y-4">
               {service.outcomes.map((o, i) => (

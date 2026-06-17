@@ -18,7 +18,7 @@ export default function ResourcesPage() {
       <PageHero
         label="Resources"
         title="Practical AI guides & insights"
-        subtitle="No-fluff content on AI automation, intelligence systems, and making AI work in real organisations."
+        subtitle="No-fluff content on AI consulting, automation, governance, and making AI work in real organisations."
       />
 
       <section className="section-pad bg-[var(--bg)]">
@@ -39,9 +39,9 @@ export default function ResourcesPage() {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filtered.map((r, i) => (
-              <AnimatedSection key={r.title} delay={i * 0.1}>
+              <AnimatedSection key={r.title} delay={i * 0.08}>
                 <div className="card-base p-7 flex flex-col h-full">
                   <div className="flex items-center gap-3 mb-4">
                     <span className="text-xs font-semibold uppercase tracking-widest text-gold border border-gold/30 rounded-full px-3 py-0.5">

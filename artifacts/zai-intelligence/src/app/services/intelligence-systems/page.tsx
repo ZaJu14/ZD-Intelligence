@@ -5,13 +5,12 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { CtaBand } from "@/components/home/CtaBand";
 import { SERVICES } from "@/lib/content";
 
-export const metadata: Metadata = {
-  title: "Intelligence Systems",
-  description:
-    "Build AI-powered systems that extract insight from your data, surface patterns, and support faster, better-informed decisions.",
-};
+const service = SERVICES[2]!;
 
-const service = SERVICES[1]!;
+export const metadata: Metadata = {
+  title: service.title,
+  description: service.summary,
+};
 
 export default function IntelligenceSystemsPage() {
   return (

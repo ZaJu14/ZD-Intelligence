@@ -26,7 +26,7 @@ export function CtaBand() {
           <h2 className="font-serif text-3xl md:text-5xl font-light max-w-2xl mx-auto leading-snug">
             {t.cta.headline}
           </h2>
-          <p className="mt-5 text-white/60 max-w-lg mx-auto">
+          <p className="mt-5 text-white/60 max-w-lg mx-auto text-lg">
             {t.cta.sub}
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">

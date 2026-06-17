@@ -43,7 +43,9 @@ export function Hero() {
           transition={{ duration: 0.65, delay: 0.1 }}
           className="font-serif text-4xl md:text-6xl lg:text-7xl font-light leading-tight max-w-4xl"
         >
-          {t.hero.headline}
+          AI Consulting,{" "}
+          <span className="italic gradient-text">Automation</span> &{" "}
+          Intelligence Systems
         </motion.h1>
 
         <motion.p
@@ -82,9 +84,9 @@ export function Hero() {
           className="mt-20 grid grid-cols-3 gap-8 max-w-sm border-t border-white/10 pt-8"
         >
           {[
-            { num: "3", label: "Core Service Areas" },
-            { num: "100%", label: "Production-Ready" },
-            { num: "EN / AR", label: "Bilingual Delivery" },
+            { num: "4", label: "Service Areas" },
+            { num: "EN/AR", label: "Bilingual Delivery" },
+            { num: "GCC", label: "& International" },
           ].map((s) => (
             <div key={s.label}>
               <p className="font-serif text-3xl font-semibold gradient-text">

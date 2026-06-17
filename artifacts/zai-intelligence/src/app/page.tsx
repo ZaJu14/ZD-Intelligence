@@ -1,28 +1,32 @@
 import type { Metadata } from "next";
 import { Hero } from "@/components/home/Hero";
-import { Pillars } from "@/components/home/Pillars";
 import { ServicesGrid } from "@/components/home/ServicesGrid";
-import { AboutStrip } from "@/components/home/AboutStrip";
+import { WhoWeWorkWith } from "@/components/home/WhoWeWorkWith";
+import { Pillars } from "@/components/home/Pillars";
+import { TechStack } from "@/components/home/TechStack";
 import { Process } from "@/components/home/Process";
 import { EarlyStage } from "@/components/home/EarlyStage";
+import { FounderSection } from "@/components/home/FounderSection";
 import { FAQ } from "@/components/home/FAQ";
 import { CtaBand } from "@/components/home/CtaBand";
 
 export const metadata: Metadata = {
-  title: "ZD Intelligence — AI Automation & Intelligence Systems",
+  title: "ZD Intelligence — AI Consulting, Automation & Intelligence Systems",
   description:
-    "ZD Intelligence designs and builds AI automation workflows, intelligence systems, and data pipelines for modern businesses. Production-ready. Bilingual. Outcome-focused.",
+    "ZD Intelligence helps organisations identify AI opportunities, automate operations, and implement secure intelligence systems that deliver measurable business value. Serving GCC and international organisations in English and Arabic.",
 };
 
 export default function HomePage() {
   return (
     <>
       <Hero />
-      <Pillars />
       <ServicesGrid />
-      <AboutStrip />
+      <WhoWeWorkWith />
+      <Pillars />
+      <TechStack />
       <Process />
       <EarlyStage />
+      <FounderSection />
       <FAQ />
       <CtaBand />
     </>

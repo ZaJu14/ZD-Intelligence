@@ -8,7 +8,7 @@ import { SERVICES } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "AI automation workflows, intelligence systems, and AI strategy — designed and built for modern organisations.",
+    "AI consulting, training, automation, and governance services — practical AI adoption for modern organisations.",
 };
 
 export default function ServicesPage() {
@@ -16,14 +16,14 @@ export default function ServicesPage() {
     <>
       <PageHero
         label="Services"
-        title="What we design and build"
-        subtitle="Three focused practice areas, each built around measurable outcomes — not theoretical frameworks."
+        title="Four focused service areas"
+        subtitle="From strategy and training to automation and governance — practical AI services designed around measurable outcomes."
       />
 
       <section className="section-pad bg-[var(--bg)]">
-        <div className="container-wide grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="container-wide grid grid-cols-1 md:grid-cols-2 gap-8">
           {SERVICES.map((s, i) => (
-            <AnimatedSection key={s.slug} delay={i * 0.12}>
+            <AnimatedSection key={s.slug} delay={i * 0.1}>
               <div className="card-base p-8 h-full flex flex-col">
                 <p className="text-4xl mb-5">{s.icon}</p>
                 <p className="text-xs font-semibold uppercase tracking-widest text-gold mb-2">

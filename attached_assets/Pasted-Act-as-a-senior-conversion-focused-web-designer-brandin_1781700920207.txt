@@ -1,0 +1,314 @@
+Act as a senior conversion-focused web designer, branding strategist, SaaS designer, and AI consulting agency expert.
+
+I want you to improve the existing ZD Intelligence website while keeping the current branding, visual identity, colors, and overall style.
+
+The goal is NOT to redesign everything.
+
+The goal is to increase:
+
+* Trust
+* Credibility
+* Authority
+* Lead generation
+* Conversion rate
+* Professional positioning
+
+while maintaining a clean and modern appearance.
+
+====================================
+COMPANY POSITIONING
+===================
+
+Company Name:
+ZD Intelligence
+
+Tagline:
+AI Consulting, Automation & Intelligence Systems
+
+Mission:
+Help organizations adopt AI securely, improve productivity, automate operations, and build practical intelligence systems that create measurable business value.
+
+Target Markets:
+
+* GCC Organizations
+* SMEs
+* Growing Businesses
+* Professional Service Firms
+* International Organizations
+
+Communication:
+
+* English
+* Arabic
+
+====================================
+FOUNDER SECTION
+===============
+
+Create a new section called:
+
+Founder & Principal Consultant
+
+Include placeholder space for a future professional headshot.
+
+Founder Name:
+Zaid Aljumaa
+
+Title:
+Founder & Principal Consultant
+
+Bio:
+
+"Zaid Aljumaa is an AI Engineer, Project Coordinator, and Technology Consultant focused on helping organizations adopt AI, automate business processes, and implement secure intelligence systems.
+
+His background combines AI, automation, project coordination, and cybersecurity, allowing him to bridge the gap between business objectives and practical technology implementation.
+
+Through ZD Intelligence, he helps organizations identify AI opportunities, improve operational efficiency, and build solutions that deliver measurable outcomes."
+
+Add:
+
+* AI Engineering
+* AI Automation
+* Project Coordination
+* Cybersecurity
+* English & Arabic Communication
+
+Place this section before the final call-to-action section.
+
+====================================
+PRIMARY SERVICE STRUCTURE
+=========================
+
+Make these the primary homepage services.
+
+SERVICE 1
+
+AI Consulting & Strategy
+
+Description:
+
+Help organizations identify AI opportunities, assess readiness, create implementation roadmaps, and develop practical AI adoption strategies.
+
+Examples:
+
+* AI Opportunity Assessments
+* AI Adoption Roadmaps
+* AI Readiness Reviews
+* Executive AI Advisory
+
+---
+
+SERVICE 2
+
+AI Workshops & Training
+
+Description:
+
+Interactive training programs designed to improve AI understanding, productivity, adoption, governance awareness, and responsible AI usage.
+
+Examples:
+
+* Executive Workshops
+* Team Training
+* Productivity Training
+* AI Awareness Programs
+
+---
+
+SERVICE 3
+
+AI Automation & Intelligence Systems
+
+Description:
+
+Design and implement AI-powered systems that automate workflows, improve decision-making, and increase operational efficiency.
+
+Examples:
+
+* Internal AI Assistants
+* Knowledge Systems
+* Workflow Automation
+* Document Intelligence
+* Retrieval-Augmented Generation (RAG)
+* AI Agents
+
+---
+
+SERVICE 4
+
+AI Security & Governance Reviews
+
+Description:
+
+Assess AI risks, governance readiness, security controls, and responsible implementation practices.
+
+Examples:
+
+* AI Risk Assessments
+* Governance Reviews
+* Policy Recommendations
+* Security Reviews
+
+====================================
+WHO WE WORK WITH
+================
+
+Create a section:
+
+Who We Work With
+
+Include:
+
+* SMEs
+* Growing Organizations
+* Operations Teams
+* Professional Service Firms
+* GCC Organizations
+* International Businesses
+
+Provide concise descriptions for each.
+
+====================================
+WHY CHOOSE ZD INTELLIGENCE
+==========================
+
+Create a dedicated trust section.
+
+Headline:
+
+Why Organizations Choose ZD Intelligence
+
+Include:
+
+* Practical AI over hype
+* Business-first recommendations
+* Security-conscious implementation
+* Vendor-neutral guidance
+* Automation focused on measurable outcomes
+* English and Arabic delivery
+* Flexible engagement models
+
+====================================
+TECHNOLOGY STACK
+================
+
+Create a modern technology section.
+
+Include:
+
+* OpenAI
+* Anthropic
+* Microsoft Copilot
+* Azure AI
+* Python
+* LangChain
+* n8n
+* PostgreSQL
+* Vector Databases
+
+Display as professional technology badges/cards.
+
+====================================
+RESOURCE CENTER
+===============
+
+Expand the resources section.
+
+Create article placeholders:
+
+1. AI Automation Opportunities for SMEs
+2. Building Internal AI Assistants Securely
+3. AI Governance for GCC Organizations
+4. 10 Processes Every Business Should Automate
+5. RAG vs Traditional Search Systems
+6. AI Adoption Roadmap for Growing Businesses
+
+Optimize for future SEO growth.
+
+====================================
+CASE STUDIES & CAPABILITIES
+===========================
+
+Create a section called:
+
+Capabilities & Example Engagements
+
+IMPORTANT:
+Do NOT create fake case studies.
+Do NOT fabricate clients.
+Do NOT fabricate results.
+
+Use examples only.
+
+Each example should show:
+
+Challenge
+Approach
+Potential Outcome
+
+Examples:
+
+* AI Productivity Assessment
+* Internal Knowledge Assistant
+* Workflow Automation Project
+* AI Governance Review
+
+Include space for future screenshots and architecture diagrams.
+
+====================================
+REMOVE OR REPLACE
+=================
+
+Remove any statistics that cannot be verified.
+
+Avoid:
+
+* Fake productivity percentages
+* Fake client counts
+* Fake ROI claims
+* Fake success metrics
+
+Replace with:
+
+* Expertise
+* Process
+* Methodology
+* Capability demonstrations
+
+====================================
+CALL TO ACTION
+==============
+
+Replace generic consultation language.
+
+Primary CTA:
+
+Book a Free AI Opportunity Assessment
+
+Alternative CTA:
+
+Schedule an Automation Strategy Session
+
+Supporting text:
+
+"No obligation. Practical recommendations. Clear next steps."
+
+====================================
+DESIGN REQUIREMENTS
+===================
+
+* Maintain existing branding.
+* Improve spacing and readability.
+* Improve mobile responsiveness.
+* Improve accessibility.
+* Improve page flow.
+* Increase trust signals.
+* Keep modern professional consulting appearance.
+* Keep site fast and lightweight.
+* Maintain premium look and feel.
+
+Most importantly:
+
+Position ZD Intelligence as a credible AI consulting, automation, and intelligence systems company led by Zaid Aljumaa, not as a freelancer marketplace, agency directory, or staffing company.
+
+The client should feel they are hiring a trusted technology consulting partner capable of delivering AI strategy, training, automation, and governance services.

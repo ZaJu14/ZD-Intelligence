@@ -5,13 +5,12 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { CtaBand } from "@/components/home/CtaBand";
 import { SERVICES } from "@/lib/content";
 
-export const metadata: Metadata = {
-  title: "AI Automation & Workflows",
-  description:
-    "Design and deploy end-to-end AI automation pipelines that eliminate repetitive tasks, reduce errors, and free your team for high-value work.",
-};
+const service = SERVICES[2]!;
 
-const service = SERVICES[0]!;
+export const metadata: Metadata = {
+  title: service.title,
+  description: service.summary,
+};
 
 export default function AIAutomationPage() {
   return (
