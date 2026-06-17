@@ -1,20 +1,25 @@
+"use client";
+
 import { AnimatedSection } from "@/components/AnimatedSection";
+import { useLanguage } from "@/lib/i18n";
 import { TECH_STACK } from "@/lib/content";
 
 export function TechStack() {
+  const { t } = useLanguage();
+  const s = t.techStack;
+
   return (
     <section className="section-pad bg-[var(--bg-card)]">
       <div className="container-wide">
         <AnimatedSection>
           <p className="text-xs font-semibold uppercase tracking-widest text-gold mb-3">
-            Technology
+            {s.eyebrow}
           </p>
-          <h2 className="font-serif text-3xl md:text-4xl font-light max-w-xl">
-            Technologies we work with
+          <h2 className="font-serif text-4xl md:text-5xl font-light max-w-xl">
+            {s.heading}
           </h2>
           <p className="mt-4 text-[var(--muted)] max-w-lg">
-            We are vendor-neutral and select the right tools for each engagement.
-            These are the platforms and frameworks we work with most frequently.
+            {s.sub}
           </p>
         </AnimatedSection>
 

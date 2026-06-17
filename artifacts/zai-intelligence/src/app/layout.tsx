@@ -56,6 +56,11 @@ export const metadata: Metadata = {
     description:
       "We design and build AI automation workflows and intelligence systems for modern businesses.",
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
   robots: {
     index: true,
     follow: true,

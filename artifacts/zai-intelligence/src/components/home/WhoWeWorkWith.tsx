@@ -1,7 +1,12 @@
+"use client";
+
 import { AnimatedSection } from "@/components/AnimatedSection";
-import { WHO_WE_WORK_WITH } from "@/lib/content";
+import { useLanguage } from "@/lib/i18n";
 
 export function WhoWeWorkWith() {
+  const { t } = useLanguage();
+  const s = t.whoWeWorkWith;
+
   return (
     <section className="section-pad bg-navy text-white relative overflow-hidden">
       <div
@@ -15,24 +20,22 @@ export function WhoWeWorkWith() {
       <div className="container-wide relative z-10">
         <AnimatedSection>
           <p className="text-xs font-semibold uppercase tracking-widest text-gold mb-3">
-            Who We Work With
+            {s.eyebrow}
           </p>
-          <h2 className="font-serif text-3xl md:text-4xl font-light max-w-2xl">
-            Organisations we help adopt AI effectively
+          <h2 className="font-serif text-4xl md:text-5xl font-light max-w-2xl">
+            {s.heading}
           </h2>
           <p className="mt-4 text-white/60 max-w-lg">
-            We work with a range of organisations across sectors and geographies —
-            from SMEs taking their first steps with AI to larger enterprises
-            scaling existing programmes.
+            {s.sub}
           </p>
         </AnimatedSection>
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {WHO_WE_WORK_WITH.map((item, i) => (
+          {s.items.map((item, i) => (
             <AnimatedSection key={item.title} delay={i * 0.09}>
               <div className="bg-white/5 border border-white/10 rounded-xl p-6 h-full hover:border-gold/40 transition-colors">
                 <p className="text-2xl mb-3">{item.icon}</p>
-                <h3 className="font-serif text-lg font-medium mb-2 text-white">
+                <h3 className="font-serif text-xl font-medium mb-2 text-white">
                   {item.title}
                 </h3>
                 <p className="text-sm leading-relaxed text-white/60">

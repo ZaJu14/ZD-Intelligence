@@ -1,35 +1,39 @@
+"use client";
+
 import { AnimatedSection } from "@/components/AnimatedSection";
-import { CAPABILITIES } from "@/lib/content";
+import { useLanguage } from "@/lib/i18n";
 
 export function EarlyStage() {
+  const { t } = useLanguage();
+  const s = t.capabilities;
+
   return (
-    <section className="section-pad bg-[var(--bg)]">
+    <section className="section-pad bg-[var(--bg-card)]">
       <div className="container-wide">
         <AnimatedSection>
           <p className="text-xs font-semibold uppercase tracking-widest text-gold mb-3">
-            Capabilities
+            {s.eyebrow}
           </p>
-          <h2 className="font-serif text-3xl md:text-4xl font-light">
-            Capabilities & Example Engagements
+          <h2 className="font-serif text-4xl md:text-5xl font-light">
+            {s.heading}
           </h2>
           <p className="mt-4 text-[var(--muted)] max-w-lg">
-            Examples of the types of engagements we design and deliver. These
-            illustrate our approach and methodology — not fabricated case studies.
+            {s.sub}
           </p>
         </AnimatedSection>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-          {CAPABILITIES.map((item, i) => (
+          {s.items.map((item, i) => (
             <AnimatedSection key={item.title} delay={i * 0.1}>
               <div className="card-base p-7 h-full flex flex-col">
                 <p className="text-3xl mb-4">{item.icon}</p>
-                <h3 className="font-serif text-xl font-medium mb-5">
+                <h3 className="font-serif text-2xl font-medium mb-5">
                   {item.title}
                 </h3>
                 <div className="space-y-4 flex-1">
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-wider text-gold mb-1.5">
-                      Challenge
+                      {s.challengeLabel}
                     </p>
                     <p className="text-sm leading-relaxed text-[var(--muted)]">
                       {item.challenge}
@@ -37,7 +41,7 @@ export function EarlyStage() {
                   </div>
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-wider text-gold mb-1.5">
-                      Approach
+                      {s.approachLabel}
                     </p>
                     <p className="text-sm leading-relaxed text-[var(--muted)]">
                       {item.approach}
@@ -45,7 +49,7 @@ export function EarlyStage() {
                   </div>
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-wider text-gold mb-1.5">
-                      Potential Outcome
+                      {s.outcomeLabel}
                     </p>
                     <p className="text-sm leading-relaxed text-[var(--muted)]">
                       {item.outcome}
@@ -54,7 +58,7 @@ export function EarlyStage() {
                 </div>
                 <div className="mt-5 pt-4 border-t border-[var(--border)]">
                   <span className="text-xs text-[var(--muted)] italic">
-                    Example engagement — space reserved for future case study
+                    {s.exampleLabel}
                   </span>
                 </div>
               </div>
@@ -64,8 +68,7 @@ export function EarlyStage() {
 
         <AnimatedSection delay={0.3}>
           <p className="mt-10 text-sm text-[var(--muted)] text-center max-w-lg mx-auto">
-            Real client outcomes will be added as engagements mature and
-            permissions allow. We do not fabricate results or client claims.
+            {s.disclaimer}
           </p>
         </AnimatedSection>
       </div>

@@ -1,13 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { useLanguage } from "@/lib/i18n";
 
 export function AboutStrip() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const { t } = useLanguage();
+  const s = t.about;
 
   return (
     <section ref={ref} className="section-pad bg-[var(--bg-card)] overflow-hidden relative">
@@ -18,24 +20,18 @@ export function AboutStrip() {
           transition={{ duration: 0.7 }}
         >
           <p className="text-xs font-semibold uppercase tracking-widest text-gold mb-4">
-            About ZD Intelligence
+            {s.label}
           </p>
           <h2 className="font-serif text-3xl md:text-5xl font-light leading-snug mb-6">
-            A trusted AI consulting{" "}
-            <span className="italic gradient-text">partner.</span>
+            {s.heading}{" "}
+            {s.headingItalic && (
+              <span className="italic gradient-text">{s.headingItalic}</span>
+            )}
           </h2>
-          <p className="text-[var(--muted)] leading-relaxed mb-4">
-            ZD Intelligence is a focused AI consulting practice that helps
-            organisations adopt AI, automate operations, and implement secure
-            intelligence systems that deliver measurable business value.
-          </p>
-          <p className="text-[var(--muted)] leading-relaxed mb-8">
-            We work in English and Arabic, remotely and on-site — serving GCC
-            organisations and international businesses with the same rigour and
-            commitment.
-          </p>
+          <p className="text-[var(--muted)] leading-relaxed mb-4">{s.p1}</p>
+          <p className="text-[var(--muted)] leading-relaxed mb-8">{s.p2}</p>
           <Link href="/about/" className="btn-primary">
-            Our Approach
+            {s.btn}
           </Link>
         </motion.div>
 
@@ -45,12 +41,7 @@ export function AboutStrip() {
           transition={{ duration: 0.7, delay: 0.15 }}
           className="grid grid-cols-2 gap-4"
         >
-          {[
-            { icon: "🎯", label: "Strategy", desc: "AI roadmaps & advisory" },
-            { icon: "🎓", label: "Training", desc: "Workshops & programmes" },
-            { icon: "⚡", label: "Automation", desc: "AI-powered workflows" },
-            { icon: "🔒", label: "Governance", desc: "Secure, responsible AI" },
-          ].map((item) => (
+          {s.features.map((item) => (
             <div
               key={item.label}
               className="bg-[var(--bg)] border border-[var(--border)] rounded-xl p-5 hover:border-gold/40 transition-colors"

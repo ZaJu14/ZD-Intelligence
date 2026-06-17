@@ -3,7 +3,7 @@ export const SITE_URL =
 
 export const CALENDLY_URL =
   process.env.NEXT_PUBLIC_CALENDLY_URL ??
-  "https://calendly.com/info-zd-intelligence";
+  "https://calendly.com/zd-intelligence-info/discovery-call";
 
 export const CONTACT_EMAIL = "info@zd-intelligence.com";
 

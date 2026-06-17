@@ -4,37 +4,47 @@ import { useState } from "react";
 import { PageHero } from "@/components/shared/PageHero";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { CtaBand } from "@/components/home/CtaBand";
-import { RESOURCES } from "@/lib/content";
-
-const CATEGORIES = ["All", "Guide", "Article"];
+import { useLanguage } from "@/lib/i18n";
 
 export default function ResourcesPage() {
-  const [active, setActive] = useState("All");
+  const [activeKey, setActiveKey] = useState("all");
+  const { t } = useLanguage();
+  const s = t.resources;
+
+  const categories = [
+    { key: "all", label: s.all },
+    { key: "guide", label: s.guide },
+    { key: "article", label: s.article },
+  ];
+
+  const guideWords = ["Guide", "دليل"];
+  const articleWords = ["Article", "مقال"];
+
   const filtered =
-    active === "All" ? RESOURCES : RESOURCES.filter((r) => r.category === active);
+    activeKey === "all"
+      ? s.items
+      : activeKey === "guide"
+      ? s.items.filter((r) => guideWords.includes(r.category))
+      : s.items.filter((r) => articleWords.includes(r.category));
 
   return (
     <>
-      <PageHero
-        label="Resources"
-        title="Practical AI guides & insights"
-        subtitle="No-fluff content on AI consulting, automation, governance, and making AI work in real organisations."
-      />
+      <PageHero label={s.label} title={s.heading} subtitle={s.sub} />
 
       <section className="section-pad bg-[var(--bg)]">
         <div className="container-wide">
           <div className="flex flex-wrap gap-2 mb-10">
-            {CATEGORIES.map((c) => (
+            {categories.map((c) => (
               <button
-                key={c}
-                onClick={() => setActive(c)}
+                key={c.key}
+                onClick={() => setActiveKey(c.key)}
                 className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors border ${
-                  active === c
+                  activeKey === c.key
                     ? "bg-gold text-navy border-gold"
                     : "border-[var(--border)] text-[var(--muted)] hover:border-gold hover:text-gold"
                 }`}
               >
-                {c}
+                {c.label}
               </button>
             ))}
           </div>
@@ -47,7 +57,6 @@ export default function ResourcesPage() {
                     <span className="text-xs font-semibold uppercase tracking-widest text-gold border border-gold/30 rounded-full px-3 py-0.5">
                       {r.category}
                     </span>
-                    <span className="text-xs text-[var(--muted)]">{r.date}</span>
                   </div>
                   <h3 className="font-serif text-xl font-medium mb-3">
                     {r.title}
@@ -56,7 +65,7 @@ export default function ResourcesPage() {
                     {r.excerpt}
                   </p>
                   <p className="mt-5 text-sm font-semibold text-gold/50 italic">
-                    Coming soon
+                    {s.comingSoon}
                   </p>
                 </div>
               </AnimatedSection>

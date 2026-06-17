@@ -43,9 +43,7 @@ export function Hero() {
           transition={{ duration: 0.65, delay: 0.1 }}
           className="font-serif text-4xl md:text-6xl lg:text-7xl font-light leading-tight max-w-4xl"
         >
-          AI Consulting,{" "}
-          <span className="italic gradient-text">Automation</span> &{" "}
-          Intelligence Systems
+          {t.hero.headline}
         </motion.h1>
 
         <motion.p

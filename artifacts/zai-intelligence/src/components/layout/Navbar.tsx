@@ -62,9 +62,9 @@ export function Navbar() {
           <button
             aria-label={lang === "ar" ? "Switch to English" : "التبديل إلى العربية"}
             onClick={() => setLang(lang === "en" ? "ar" : "en")}
-            className="btn-ghost px-2 py-1 text-xs font-semibold border border-[var(--border)] rounded"
+            className="flex items-center gap-1 px-3 py-1.5 rounded-lg border border-[var(--border)] hover:border-gold/60 bg-transparent hover:bg-gold/10 transition-all text-sm font-semibold text-[var(--fg)]"
           >
-            {lang === "en" ? "AR" : "EN"}
+            🌐 {lang === "en" ? "العربية" : "English"}
           </button>
           {mounted && (
             <button
@@ -81,9 +81,9 @@ export function Navbar() {
           <button
             aria-label={lang === "ar" ? "Switch to English" : "التبديل إلى العربية"}
             onClick={() => setLang(lang === "en" ? "ar" : "en")}
-            className="btn-ghost px-2 py-1 text-xs font-semibold border border-[var(--border)] rounded"
+            className="flex items-center gap-1 px-3 py-1.5 rounded-lg border border-[var(--border)] hover:border-gold/60 bg-transparent hover:bg-gold/10 transition-all text-sm font-semibold text-[var(--fg)]"
           >
-            {lang === "en" ? "AR" : "EN"}
+            🌐 {lang === "en" ? "العربية" : "English"}
           </button>
           {mounted && (
             <button
