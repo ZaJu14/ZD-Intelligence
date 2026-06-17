@@ -1,0 +1,71 @@
+12:42:22.253
+├ ○ /services/ai-automation              2.54 kB         147 kB
+12:42:22.253
+├ ○ /services/ai-strategy                2.54 kB         147 kB
+12:42:22.254
+├ ○ /services/intelligence-systems       2.54 kB         147 kB
+12:42:22.254
+└ ○ /sitemap.xml                           127 B         103 kB
+12:42:22.254
++ First Load JS shared by all             102 kB
+12:42:22.254
+  ├ chunks/329-f71cc6208a34aca6.js       46.3 kB
+12:42:22.254
+  ├ chunks/6cd49086-2c621d4a895d5f34.js  54.2 kB
+12:42:22.254
+  └ other shared chunks (total)          1.92 kB
+12:42:22.254
+12:42:22.254
+12:42:22.254
+○  (Static)  prerendered as static content
+12:42:22.254
+12:42:22.316
+Success: Build command completed
+12:42:22.489
+Executing user deploy command: npx wrangler pages deploy artifacts/zai-intelligence/out --project-name=zd-intelligence
+12:42:23.380
+npm warn exec The following package was not found and will be installed: wrangler@4.86.0
+12:42:32.936
+12:42:32.936
+ ⛅️ wrangler 4.86.0
+12:42:32.936
+───────────────────
+12:42:33.175
+12:42:33.214
+✘ [ERROR] A request to the Cloudflare API (/accounts/5216e3cb1b1b49b955a117f7e979070a/pages/projects/zd-intelligence) failed.
+12:42:33.214
+12:42:33.214
+  Authentication error [code: 10000]
+12:42:33.214
+12:42:33.214
+12:42:33.214
+📎 It looks like you are authenticating Wrangler via a custom API token set in an environment variable.
+12:42:33.215
+Please ensure it has the correct permissions for this operation.
+12:42:33.215
+12:42:33.219
+Getting User settings...
+12:42:34.035
+👋 You are logged in with an User API Token, associated with the email zaidaljumaa62@gmail.com.
+12:42:34.035
+ℹ️  The API Token is read from the CLOUDFLARE_API_TOKEN environment variable.
+12:42:34.039
+┌───────────────────────────────────┬──────────────────────────────────┐
+12:42:34.039
+│ Account Name                      │ Account ID                       │
+12:42:34.039
+├───────────────────────────────────┼──────────────────────────────────┤
+12:42:34.039
+│ Zaidaljumaa62@gmail.com's Account │ 5216e3cb1b1b49b955a117f7e979070a │
+12:42:34.039
+└───────────────────────────────────┴──────────────────────────────────┘
+12:42:34.039
+🔓 To see token permissions visit https://dash.cloudflare.com/profile/api-tokens.
+12:42:34.509
+🎢 Membership roles in "Zaidaljumaa62@gmail.com's Account": Contact account super admin to change your permissions.
+12:42:34.509
+- Super Administrator - All Privileges
+12:42:34.510
+🪵  Logs were written to "/opt/buildhome/.config/.wrangler/logs/wrangler-2026-06-17_09-42-32_609.log"
+12:42:34.558
+Failed: error occurred while running deploy command
