@@ -82,7 +82,7 @@ export function Hero() {
           className="mt-20 grid grid-cols-3 gap-8 max-w-sm border-t border-white/10 pt-8"
         >
           {[
-            { num: "4", label: "Service Areas" },
+            { num: "5", label: "Service Areas" },
             { num: "EN/AR", label: "Bilingual Delivery" },
             { num: "GCC", label: "& International" },
           ].map((s) => (

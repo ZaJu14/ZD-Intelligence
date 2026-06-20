@@ -28,7 +28,7 @@ export function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="container-wide flex h-16 items-center justify-between">
+      <div className="container-wide flex h-16 items-center justify-between bg-[transparent]">
         <Link
           href="/"
           className="font-serif text-xl font-semibold tracking-wide flex items-center gap-2"
@@ -62,7 +62,7 @@ export function Navbar() {
           <button
             aria-label={lang === "ar" ? "Switch to English" : "التبديل إلى العربية"}
             onClick={() => setLang(lang === "en" ? "ar" : "en")}
-            className="flex items-center gap-1 px-3 py-1.5 rounded-lg border border-[var(--border)] hover:border-gold/60 bg-transparent hover:bg-gold/10 transition-all text-sm font-semibold text-[var(--fg)]"
+            className="flex items-center gap-1 px-3 py-1.5 rounded-lg border border-[var(--border)] hover:border-gold/60 hover:bg-gold/10 transition-all text-sm font-semibold text-[color:var(--bg)] bg-[#d4ab5c]"
           >
             🌐 {lang === "en" ? "العربية" : "English"}
           </button>
@@ -70,7 +70,7 @@ export function Navbar() {
             <button
               aria-label="Toggle theme"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="btn-ghost p-2 rounded-full"
+              className="btn-ghost p-2 rounded-full bg-[#d4ab5c]"
             >
               {theme === "dark" ? <SunIcon /> : <MoonIcon />}
             </button>
@@ -81,7 +81,7 @@ export function Navbar() {
           <button
             aria-label={lang === "ar" ? "Switch to English" : "التبديل إلى العربية"}
             onClick={() => setLang(lang === "en" ? "ar" : "en")}
-            className="flex items-center gap-1 px-3 py-1.5 rounded-lg border border-[var(--border)] hover:border-gold/60 bg-transparent hover:bg-gold/10 transition-all text-sm font-semibold text-[var(--fg)]"
+            className="flex items-center gap-1 px-3 py-1.5 rounded-lg border border-[var(--border)] hover:border-gold/60 hover:bg-gold/10 transition-all text-sm font-semibold text-[color:var(--bg)] bg-[#d4ab5c]"
           >
             🌐 {lang === "en" ? "العربية" : "English"}
           </button>
