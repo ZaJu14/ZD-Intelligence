@@ -5,10 +5,11 @@ import { PageHero } from "@/components/shared/PageHero";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { CtaBand } from "@/components/home/CtaBand";
 import { useLanguage } from "@/lib/i18n";
+import { RESOURCES } from "@/content/resources";
 
 export default function ResourcesPage() {
   const [activeKey, setActiveKey] = useState("all");
-  const { t } = useLanguage();
+  const { lang, t } = useLanguage();
   const s = t.resources;
 
   const categories = [
@@ -17,15 +18,10 @@ export default function ResourcesPage() {
     { key: "article", label: s.article },
   ];
 
-  const guideWords = ["Guide", "دليل"];
-  const articleWords = ["Article", "مقال"];
-
   const filtered =
     activeKey === "all"
-      ? s.items
-      : activeKey === "guide"
-      ? s.items.filter((r) => guideWords.includes(r.category))
-      : s.items.filter((r) => articleWords.includes(r.category));
+      ? RESOURCES
+      : RESOURCES.filter((r) => r.resourceType === activeKey);
 
   return (
     <>
@@ -50,26 +46,48 @@ export default function ResourcesPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filtered.map((r, i) => (
-              <AnimatedSection key={r.title} delay={i * 0.08}>
-                <div className="card-base p-7 flex flex-col h-full">
-                  <div className="flex items-center gap-3 mb-4">
-                    <span className="text-xs font-semibold uppercase tracking-widest text-gold border border-gold/30 rounded-full px-3 py-0.5">
-                      {r.category}
-                    </span>
+            {filtered.map((r, i) => {
+              const content = r[lang] as {
+                title: string;
+                summary?: string;
+                description?: string;
+                author: string;
+                tags: string[];
+              };
+              const desc = content.summary ?? content.description ?? "";
+              const categoryLabel =
+                r.resourceType === "guide" ? s.guide : s.article;
+              return (
+                <AnimatedSection key={r.id} delay={i * 0.08}>
+                  <div className="card-base p-7 flex flex-col h-full">
+                    <div className="flex items-center justify-between gap-3 mb-4">
+                      <span className="text-xs font-semibold uppercase tracking-widest text-gold border border-gold/30 rounded-full px-3 py-0.5">
+                        {categoryLabel}
+                      </span>
+                      <span className="text-xs text-[var(--muted)]">
+                        {r.estimatedReadingTime} {s.readTime}
+                      </span>
+                    </div>
+                    <h3 className="font-serif text-xl font-medium mb-3">
+                      {content.title}
+                    </h3>
+                    <p className="text-sm leading-relaxed text-[var(--muted)] flex-1">
+                      {desc}
+                    </p>
+                    <div className="mt-5 flex items-center justify-between">
+                      <p className="text-sm font-semibold text-gold/50 italic">
+                        {s.comingSoon}
+                      </p>
+                      {r.resourceType === "guide" && "difficultyLevel" in r && (
+                        <span className="text-xs text-[var(--muted)] border border-[var(--border)] rounded-full px-2 py-0.5">
+                          {s.difficulty[r.difficultyLevel as keyof typeof s.difficulty]}
+                        </span>
+                      )}
+                    </div>
                   </div>
-                  <h3 className="font-serif text-xl font-medium mb-3">
-                    {r.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-[var(--muted)] flex-1">
-                    {r.excerpt}
-                  </p>
-                  <p className="mt-5 text-sm font-semibold text-gold/50 italic">
-                    {s.comingSoon}
-                  </p>
-                </div>
-              </AnimatedSection>
-            ))}
+                </AnimatedSection>
+              );
+            })}
           </div>
         </div>
       </section>

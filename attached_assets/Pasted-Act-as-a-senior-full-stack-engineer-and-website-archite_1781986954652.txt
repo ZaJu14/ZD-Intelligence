@@ -1,0 +1,296 @@
+Act as a senior full-stack engineer and website architect.
+
+I want to transform the ZD Intelligence website into a content-driven platform.
+
+IMPORTANT:
+Do NOT hardcode services, mentorship features, guides, articles, or resources directly inside page components.
+
+Create a centralized content architecture.
+
+====================================
+GOAL
+====
+
+Create a scalable content management structure where:
+
+* Services
+* Mentorship Features
+* Articles
+* Guides
+* Resources
+* Future Programs
+
+are stored in separate data files.
+
+Pages should dynamically render content from these files.
+
+This will allow me to add new content without editing page layouts.
+
+====================================
+CONTENT STRUCTURE
+=================
+
+Create a folder:
+
+/content
+
+Inside create:
+
+services.js
+features.js
+articles.js
+guides.js
+resources.js
+
+or equivalent JSON format if more appropriate.
+
+====================================
+SERVICES DATA MODEL
+===================
+
+Each service should support:
+
+id
+title
+slug
+shortDescription
+fullDescription
+icon
+category
+targetAudience
+deliverables
+pricingTier
+featured
+language
+
+The Services page must automatically generate cards from this file.
+
+====================================
+MENTORSHIP FEATURES DATA MODEL
+==============================
+
+Create a dedicated file for mentorship and graduation project support features.
+
+Each feature should support:
+
+id
+title
+description
+category
+icon
+benefits
+includedInPackage
+displayOrder
+
+Populate with initial features:
+
+1. Project Management
+
+* Timeline planning
+* Milestones
+* Scope definition
+
+2. Accountability
+
+* Weekly check-ins
+* Progress tracking
+* Risk identification
+
+3. Technical Guidance
+
+* Architecture review
+* Technology selection
+* Technical recommendations
+
+4. Documentation Support
+
+* Proposal review
+* SRS review
+* Final report guidance
+
+5. Research Support
+
+* Literature review guidance
+* Academic resources
+* Research methodology
+
+6. Presentation & Defense Preparation
+
+* Presentation coaching
+* Demo preparation
+* Q&A preparation
+
+7. Career Development
+
+* CV review
+* LinkedIn guidance
+* Portfolio development
+
+8. Industry Mentorship
+
+* Agile practices
+* Project management principles
+* Industry standards
+
+Display these automatically as modern cards.
+
+====================================
+ARTICLES SYSTEM
+===============
+
+Create an articles file.
+
+Each article should support:
+
+title
+slug
+summary
+author
+publishDate
+category
+tags
+coverImage
+content
+
+The Resources page should automatically list articles.
+
+====================================
+GUIDES SYSTEM
+=============
+
+Create a guides file.
+
+Each guide should support:
+
+title
+slug
+description
+difficultyLevel
+estimatedReadingTime
+category
+content
+
+The Guides page should automatically render guide cards.
+
+====================================
+FUTURE SCALABILITY
+==================
+
+The architecture should support:
+
+* Adding new services
+* Adding new mentorship features
+* Adding workshops
+* Adding training programs
+* Adding case studies
+* Adding downloadable resources
+
+without modifying page layouts.
+
+====================================
+MULTI-LANGUAGE FIX
+==================
+
+IMPORTANT:
+
+The language switcher must translate the ENTIRE WEBSITE.
+
+Currently some content remains in the original language.
+
+Fix this.
+
+Requirements:
+
+When switching to Arabic:
+
+* All navigation items translated
+* All buttons translated
+* All services translated
+* All feature cards translated
+* All articles translated
+* All guides translated
+* All page titles translated
+* All section titles translated
+* Metadata translated
+* Footer translated
+
+When switching to English:
+
+* Entire website returns to English.
+
+No mixed-language pages.
+
+====================================
+INTERNATIONALIZATION ARCHITECTURE
+=================================
+
+Store translations separately.
+
+Example:
+
+/translations/en.json
+/translations/ar.json
+
+Every piece of text on the website must be retrieved from translation files.
+
+No hardcoded text inside page components.
+
+Arabic requirements:
+
+* RTL layout support
+* Proper spacing
+* Proper alignment
+* Responsive mobile support
+
+====================================
+CONTENT LOADING
+===============
+
+Pages must dynamically load content from:
+
+services
+features
+articles
+guides
+
+and render cards automatically.
+
+When a new item is added to the data file, it should appear on the website automatically.
+
+====================================
+UI REQUIREMENTS
+===============
+
+Maintain current branding and design.
+
+Create:
+
+* Modern cards
+* Smooth hover effects
+* Mobile responsiveness
+* Clean spacing
+* Consistent card design
+
+Cards should include:
+
+* Icon
+* Title
+* Description
+* Category
+* Learn More button
+
+====================================
+OUTPUT
+======
+
+Implement all code changes directly.
+
+Refactor the website architecture to be content-driven and scalable.
+
+Create reusable components.
+
+Reduce duplicated content.
+
+Improve maintainability.
+
+Ensure future additions can be made by editing data files only.

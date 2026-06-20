@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Hero } from "@/components/home/Hero";
 import { ServicesGrid } from "@/components/home/ServicesGrid";
+import { MentorshipFeatures } from "@/components/home/MentorshipFeatures";
 import { WhoWeWorkWith } from "@/components/home/WhoWeWorkWith";
 import { Pillars } from "@/components/home/Pillars";
 import { TechStack } from "@/components/home/TechStack";
@@ -21,6 +22,7 @@ export default function HomePage() {
     <>
       <Hero />
       <ServicesGrid />
+      <MentorshipFeatures />
       <WhoWeWorkWith />
       <Pillars />
       <TechStack />
