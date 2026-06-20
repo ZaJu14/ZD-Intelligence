@@ -1,0 +1,26 @@
+2026-06-20T21:35:51.735749Z	   Creating an optimized production build ...
+2026-06-20T21:36:09.878377Z	 ✓ Compiled successfully in 14.8s
+2026-06-20T21:36:09.88336Z	   Linting and checking validity of types ...
+2026-06-20T21:36:13.594329Z	Failed to compile.
+2026-06-20T21:36:13.594674Z	
+2026-06-20T21:36:13.594819Z	./src/lib/i18n.tsx:51:51
+2026-06-20T21:36:13.596212Z	Type error: Type '{ readonly nav: { readonly services: "الخدمات"; readonly about: "من نحن"; readonly resources: "المصادر"; readonly contact: "تواصل معنا"; readonly bookCall: "احجز تقييماً مجانياً"; }; ... 14 more ...; readonly resources: { ...; }; } | { ...; }' is not assignable to type '{ readonly nav: { readonly services: "Services"; readonly about: "About"; readonly resources: "Resources"; readonly contact: "Contact"; readonly bookCall: "Book a Free Call"; }; readonly hero: { ...; }; ... 13 more ...; readonly resources: { ...; }; }'.
+2026-06-20T21:36:13.596358Z	  Type '{ readonly nav: { readonly services: "الخدمات"; readonly about: "من نحن"; readonly resources: "المصادر"; readonly contact: "تواصل معنا"; readonly bookCall: "احجز تقييماً مجانياً"; }; ... 14 more ...; readonly resources: { ...; }; }' is not assignable to type '{ readonly nav: { readonly services: "Services"; readonly about: "About"; readonly resources: "Resources"; readonly contact: "Contact"; readonly bookCall: "Book a Free Call"; }; readonly hero: { ...; }; ... 13 more ...; readonly resources: { ...; }; }'.
+2026-06-20T21:36:13.596452Z	    The types of 'nav.services' are incompatible between these types.
+2026-06-20T21:36:13.596507Z	      Type '"الخدمات"' is not assignable to type '"Services"'.
+2026-06-20T21:36:13.59655Z	
+2026-06-20T21:36:13.596593Z	[0m [90m 49 |[39m
+2026-06-20T21:36:13.596626Z	 [90m 50 |[39m   [36mreturn[39m (
+2026-06-20T21:36:13.596671Z	[31m[1m>[22m[39m[90m 51 |[39m     [33m<[39m[33mLangContext[39m[33m.[39m[33mProvider[39m value[33m=[39m{{ lang[33m,[39m setLang[33m,[39m t[33m:[39m translations[lang] }}[33m>[39m
+2026-06-20T21:36:13.596718Z	 [90m    |[39m                                                   [31m[1m^[22m[39m
+2026-06-20T21:36:13.596781Z	 [90m 52 |[39m       {children}
+2026-06-20T21:36:13.596865Z	 [90m 53 |[39m     [33m<[39m[33m/[39m[33mLangContext[39m[33m.[39m[33mProvider[39m[33m>[39m
+2026-06-20T21:36:13.596977Z	 [90m 54 |[39m   )[33m;[39m[0m
+2026-06-20T21:36:13.628943Z	Next.js build worker exited with code: 1 and signal: null
+2026-06-20T21:36:13.658733Z	/opt/buildhome/repo/artifacts/zai-intelligence:
+2026-06-20T21:36:13.659013Z	 ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/zai-intelligence@0.0.0 build: `next build`
+2026-06-20T21:36:13.659114Z	Exit status 1
+2026-06-20T21:36:13.725767Z	 ELIFECYCLE  Command failed with exit code 1.
+2026-06-20T21:36:13.747401Z	Failed: Error while executing user command. Exited with error code: 1
+2026-06-20T21:36:13.753503Z	Failed: build command exited with code: 1
+2026-06-20T21:36:14.384973Z	Failed: error occurred while running build command
