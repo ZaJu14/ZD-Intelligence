@@ -167,6 +167,59 @@ export const en = {
       { question: "Do we need an existing AI strategy to work with you?", answer: "Not at all. Many clients come to us precisely because they don't have one yet. We help you build it from first principles and turn it into a concrete action plan." },
     ],
   },
+  aboutPage: {
+    hero: {
+      label: "Our Approach",
+      title: "We build AI systems that work in the real world.",
+      subtitle:
+        "No slide decks, no vague roadmaps. We design, build, and deploy AI automation and intelligence systems — and we stay accountable for the outcomes.",
+    },
+    whyExist: {
+      heading: "Why we exist",
+      p1: "Most organisations know AI can help them. The hard part is turning that knowledge into a working system — one that integrates with real data, handles edge cases, and keeps working six months after launch.",
+      p2: "ZD Intelligence was built to close that gap. We focus on the execution layer: designing systems that fit your operations, building them with production-grade rigour, and supporting them long enough to matter.",
+      p3: "We work in Arabic and English, remotely or on-site, with organisations of any size. The only constant is that we stay focused on outcomes — not on impressive-looking deliverables that gather dust.",
+      linkedin: "Connect on LinkedIn",
+    },
+    cards: [
+      {
+        icon: "🎯",
+        title: "Our Mission",
+        body: "To make AI automation practical, measurable, and genuinely useful — for organisations that want results, not hype.",
+      },
+      {
+        icon: "🔬",
+        title: "Our Method",
+        body: "We start with your operations, not with technology. Every system we build is designed around your data, your constraints, and your team's ability to use and maintain it.",
+      },
+      {
+        icon: "🤝",
+        title: "Our Commitment",
+        body: "We are an early-stage practice. We will not fabricate case studies or inflate credentials. We let our work speak for itself as it grows.",
+      },
+    ],
+    howWeOperate: {
+      eyebrow: "How We Operate",
+      heading: "Remote-first. Globally capable.",
+      items: [
+        {
+          icon: "🌐",
+          title: "No Geographic Limits",
+          desc: "We serve clients remotely across any timezone. If you have data and a problem to solve, location is not a constraint.",
+        },
+        {
+          icon: "🗣️",
+          title: "Arabic & English",
+          desc: "We work fluently in both languages — in meetings, in documentation, and in the systems we build.",
+        },
+        {
+          icon: "⚡",
+          title: "Async-Capable",
+          desc: "We adapt to your working rhythm. Structured check-ins, clear milestones, and transparent communication — always.",
+        },
+      ],
+    },
+  },
   resources: {
     label: "Resources",
     heading: "Practical AI guides & insights",
