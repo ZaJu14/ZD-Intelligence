@@ -92,7 +92,7 @@ export const ARTICLES: Article[] = [
     estimatedReadingTime: 8,
     featured: true,
     en: {
-      title: "AI Automation Opportunities for SMEs",
+      title: "Projectssss",
       summary:
         "A practical guide to the highest-value AI automation use cases for small and medium businesses — and how to evaluate which ones apply to your operations.",
       author: "ZD Intelligence",
