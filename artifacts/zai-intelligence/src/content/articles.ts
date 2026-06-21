@@ -84,26 +84,4 @@ export const ARTICLES: Article[] = [
       tags: ["RAG", "الذكاء الاصطناعي", "البحث", "أنظمة المعرفة"],
     },
   },
-   {
-    id: "Planning Projects",
-    slug: "Planning projects",
-    category: "article",
-    publishDate: "2024-Q1",
-    estimatedReadingTime: 8,
-    featured: true,
-    en: {
-      title: "Projectssss",
-      summary:
-        "A practical guide to the highest-value AI automation use cases for small and medium businesses — and how to evaluate which ones apply to your operations.",
-      author: "ZD Intelligence",
-      tags: ["automation", "sme", "productivity", "ai"],
-    },
-    ar: {
-      title: "فرص أتمتة الذكاء الاصطناعي للشركات الصغيرة والمتوسطة",
-      summary:
-        "دليل عملي لحالات استخدام أتمتة الذكاء الاصطناعي الأعلى قيمة للشركات الصغيرة والمتوسطة — وكيفية تقييم أيها ينطبق على عملياتك.",
-      author: "ZD Intelligence",
-      tags: ["الأتمتة", "الشركات الصغيرة والمتوسطة", "الإنتاجية", "الذكاء الاصطناعي"],
-    },
-  },
 ];
