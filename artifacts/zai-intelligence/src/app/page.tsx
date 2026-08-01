@@ -28,7 +28,7 @@ export default function HomePage() {
       <TechStack />
       <Process />
       <EarlyStage />
-      <FounderSection />
+      {/* <FounderSection /> */}
       <FAQ />
       <CtaBand />
     </>
